@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "ACCG,AAAD,aAAO,CAAC;EACN,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,YAAY;CAAG;;AACjC,AAAD,eAAS,CAAC;EACR,MAAM,EAAE,iBAAiB;EACzB,UAAU,EAAE,UAAU;EACtB,aAAa,EAAE,IAAI;EACnB,eAAe,EAAE,IAAI;EACrB,KAAK,EAAE,OAAO;CAAG",
+    "sources": [
+        "../sass/style.sass",
+        "../sass/blocks/_navbar.sass",
+        "../sass/_colors.sass"
+    ],
+    "names": [],
+    "file": "style.css"
+}
