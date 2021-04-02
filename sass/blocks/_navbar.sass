@@ -1,10 +1,36 @@
 .navbar 
   &-block
     display: flex
-    justify-content: space-around
+    justify-content: space-between
+    margin-top: 50px
+    align-items: center
+    margin-bottom: 65px
+  &__logo
+    display: flex
+    align-items: center
+  &__name
+    margin-left: 10px
+    font-family: 'Rubik-Bold'
   &__button
     border: 1px solid #F53855
     box-sizing: border-box
     border-radius: 50px
+    width: 150px
+    height: 45px
     text-decoration: none
     color: #F53855
+    background: #fff
+    &:hover
+      cursor: pointer
+      background-color: lighten(#F53855, 40%)
+  &__text
+    text-decoration: none
+    color: #4F5665
+    margin-right: 40px
+    &:last-child
+      margin-right: 0
+
+  &__sign
+    text-decoration: none
+    color: #4F5665
+    margin-right: 30px
