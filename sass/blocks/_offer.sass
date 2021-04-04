@@ -15,7 +15,7 @@
       flex-direction: column
       padding-left: 27px
     &__image
-      background: #FFECEC
+      background: $offer-image
       border-radius: 70px
       width: 55px
       height: 55px
@@ -27,6 +27,25 @@
       line-height: 30px
       font-weight: 700
     &__text
-      color: #4F5665
+      color: $text-color
       font-size: 20px
       line-height: 30px
+@media ( max-width: 768px)
+  .offer
+    &-block
+      display: block
+      height: 220px
+      &__image
+        margin-left: 20px
+      &__title
+        justify-content: space-between
+        margin-bottom: 15px
+      &__subtitle
+        margin-right: 20px
+      &__numb
+        text-align: end
+        font-size: 20px
+      &__text
+        font-size: 15px
+      &__vector
+        display: none

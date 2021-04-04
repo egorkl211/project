@@ -2,7 +2,7 @@
   &-block
     display: flex
     justify-content: space-between
-    margin-bottom: 210px
+    margin-bottom: 165px
   &-text
     flex-basis: 50%
     margin-left: 150px
@@ -12,10 +12,12 @@
       line-height: 50px
       width: 390px
     &__subtitle
+      display: block
+      max-width: 430px
       font-size: 16px
       line-height: 30px
-      max-width: 430px
-      color: #4F5665
+      margin-bottom: 20px
+      color: $text-color
   &__image
     margin: auto
     margin-top: -200px
@@ -31,6 +33,28 @@
       margin-right: 12px
       margin-bottom: 25px
     &__text
-      color: #4F5665
+      color: $text-color
       font-size: 14px
       line-height: 30px
+@media ( max-width: 1200px)
+  .provide
+    &-block
+      display: inline-block
+      margin-bottom: 70px
+    &-text
+      margin-left: 0px
+    &__image
+      position: relative
+@media ( max-width: 768px)
+  .provide
+    &-text 
+      &__title
+        font-size: 30px
+      &__subtitle
+        font-size: 13px
+    &-list
+      &__text
+        font-size: 11px
+
+      
+  

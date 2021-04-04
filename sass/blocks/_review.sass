@@ -1,12 +1,114 @@
+.review
+  &-title
+    margin: auto
+    text-align: center
+    margin-bottom: 20px
+    max-width: 450px
+    font-weight: 500
+    font-size: 35px
+    line-height: 50px
+  &-subtitle
+    display: block
+    margin: auto
+    text-align: center
+    max-width: 555px
+    font-size: 16px
+    line-height: 30px
+    color: $text-color
+    margin-bottom: 60px
 .slider
   display: flex
-  justify-content: space-between
+  justify-content: space-around
+  margin-bottom: 60px
   &-block
     display: flex
     flex-basis: 33%
     flex-direction: column
-    border: 2px solid #DDDDDD
+    border: 2px solid $border-color
     box-sizing: border-box
     border-radius: 10px
-    &__name
+    margin-right: 25px
+    margin-left: 25px
+    transition: 0.4s
+    &:hover
+      border: 2px solid $color-button
+      box-shadow: 0px 10px 30px 0px $border-color
+    &__data
       display: flex
+      align-items: center
+      justify-content: space-between
+
+    &__text
+      display: flex
+      align-items: center
+      padding: 30px 0 20px 30px
+    &__descript
+      display: flex
+      flex-direction: column
+      padding-left: 20px
+    &__grade
+      padding-right: 31px
+      padding-top: 5px
+    &__feedback
+      padding: 0 30px 30px 30px 
+      max-width: 400px
+    &__name
+      font-weight: 500
+      font-size: 18px
+      line-height: 30px
+    &__address
+      font-size: 14px
+      line-height: 30px
+      color: $text-color
+    &__comment
+      font-size: 16px
+      line-height: 30px
+    &__star
+      padding-left: 10px
+.arrows
+  display: flex
+  justify-content: flex-end
+  margin-bottom: 150px
+  &-left
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 60px
+    height: 60px
+    border: 2px solid $color-button
+    box-sizing: border-box
+    border-radius: 50%
+    margin-right: 20px
+    transition: 0.4s
+    &:hover
+      cursor: pointer
+      box-shadow: 0px 20px 17px 0px rgba(245, 56, 56, 0.35)
+  &-right
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 60px
+    height: 60px
+    border: 2px solid $color-button
+    background-color: $color-button
+    box-sizing: border-box
+    border-radius: 50%
+    transition: 0.4s
+    &:hover
+      cursor: pointer
+      box-shadow: 0px 20px 17px 0px rgba(245, 56, 56, 0.35)
+
+@media ( max-width: 1200px)
+  .slider
+    display: block
+    margin-bottom: 70px
+    &-block
+      margin-bottom: 15px
+@media ( max-width: 768px)
+  .review
+    &-title
+      max-width: 350px
+      font-size: 25px
+    &-subtitle
+      max-width: 350px
+      font-size: 13px

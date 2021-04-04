@@ -13,33 +13,51 @@
     font-weight: 500
     font-size: 20px
     line-height: 24px
-    color: #0B132A
   &__button
-    border: 1px solid #F53855
+    border: 1px solid $color-button
     box-sizing: border-box
     border-radius: 50px
     width: 150px
     height: 45px
     text-decoration: none
-    color: #F53855
-    background: #fff
+    color: $color-button
+    background: $background-color
     font-weight: 700
     font-size: 16px
     line-height: 19px
+    transition: 0.4s
     &:hover
+      box-shadow: 0px 20px 17px 0px rgba(245, 56, 56, 0.35)
+      background: $color-button
+      color: $background-color
       cursor: pointer
-      background-color: lighten(#F53855, 40%)
   &__text
     text-decoration: none
-    color: #4F5665
+    color: $text-color
     margin-right: 40px
     &:last-child
       margin-right: 0
-
   &__sign
     text-decoration: none
-    color: #0B132A
     margin-right: 30px
     font-weight: 500
     font-size: 16px
     line-height: 19px
+    color: $text-black
+@media ( max-width: 1200px)
+  .navbar 
+    &-block
+      display: block
+    &__logo
+      margin-bottom: 20px
+    &__info
+      margin-bottom: 20px
+@media ( max-width: 768px)
+  .navbar 
+    &__text
+      display: flex
+      flex-direction: column
+      margin-bottom: 15px
+    &__sign
+      display: block
+      margin-bottom: 15px
