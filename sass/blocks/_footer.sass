@@ -1,0 +1,65 @@
+.footer
+  background: $bacground-footer
+  &-block
+    display: flex
+    justify-content: space-between
+    &__logo
+      display: flex
+      align-items: center
+      margin-bottom: 20px
+    &__name
+      font-weight: 500
+      font-size: 20px
+      line-height: 24px
+      margin-left: 10px
+    &__descript
+      display: block
+      max-width: 340px
+      font-weight: 500
+      font-size: 16px
+      line-height: 30px
+      color: $text-color
+      margin-bottom: 30px
+    &__circle
+      margin-left: -18px
+     
+    &__copyright
+      font-size: 16px
+      line-height: 30px
+      color: $color-copyright
+    &__title
+      font-weight: 500
+      font-size: 18px
+      line-height: 30px
+      margin-bottom: 20px
+    &__subtitle
+      text-decoration: none
+      font-size: 16px
+      line-height: 30px
+      color: $text-color
+      margin-bottom: 10px
+    &__product
+      display: flex
+      flex-direction: column
+      margin-top: 140px
+      margin-bottom: 140px
+    
+@media ( max-width: 768px)
+  .footer
+    &-block
+      display: block
+      &__logo
+        margin-top: 40px
+      &__product
+        margin-top: 20px
+        margin-bottom: 20px
+      &__name
+        font-size: 15px
+      &__descript
+        font-size: 13px
+      &__copyright
+        font-size: 13px
+      &__title
+        font-size: 15px
+      &__subtitle
+        font-size: 13px
