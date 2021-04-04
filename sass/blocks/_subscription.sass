@@ -1,0 +1,65 @@
+.subscription
+  &-block 
+    display: flex
+    justify-content: space-between
+    margin-bottom: 82px
+  &-text 
+    &__title
+      margin: auto
+      margin-bottom: 20px
+      font-weight: 500
+      font-size: 35px
+      line-height: 45px
+      max-width: 370px
+    &__subtitle
+      font-size: 16px
+      line-height: 30px
+      color: $text-color
+  &-button
+    display: flex
+    align-items: center
+    &__text
+      width: 250px
+      height: 60px
+      border: 2px solid $color-button
+      box-sizing: border-box
+      border-radius: 50px
+      background-color: $background-color
+      color: $color-button
+      font-size: 16px
+      line-height: 25px
+      font-weight: 700
+      transition: 0.4s
+      &:hover
+        box-shadow: 0px 20px 17px 0px rgba(245, 56, 56, 0.35)
+        cursor: pointer
+        color: $background-color
+        background-color: $color-button
+@media ( max-width: 768px)
+  .subscription
+    &-block
+      display: block  
+      margin-bottom: 70px
+    &-text 
+      &__title
+        max-width: 750px
+        margin: 0
+        margin-bottom: 15px
+        font-size: 25px
+      &__subtitle
+        max-width: 750px
+        font-size: 14px
+    &-button
+      &__text
+        max-width: 740px
+        width: 100%
+        margin-top: 15px
+
+
+        
+
+
+    
+    
+    
+    
