@@ -523,6 +523,7 @@ img {
   flex-direction: column;
   border: 2px solid #DDDDDD;
   box-sizing: border-box;
+  height: 292px;
   border-radius: 10px;
   margin-right: 25px;
   margin-left: 25px;
@@ -553,6 +554,7 @@ img {
 }
 
 .slider-block__grade {
+  display: flex;
   padding-right: 31px;
   padding-top: 5px;
 }
@@ -580,6 +582,7 @@ img {
 }
 
 .slider-block__star {
+  margin: auto;
   padding-left: 10px;
 }
 
@@ -623,6 +626,11 @@ img {
 .arrows-right:hover {
   cursor: pointer;
   box-shadow: 0px 20px 17px 0px rgba(245, 56, 56, 0.35);
+}
+
+.slick-dots {
+  list-style: none;
+  display: flex;
 }
 
 @media (max-width: 1200px) {
